@@ -4,11 +4,13 @@ import React from 'react';
 import IndexScreen from './src/screens/IndexScreen';
 import { Provider } from './src/context/BlogContext';
 import ShowScreen from './src/screens/ShowScreen';
+import CreateScreen from './src/screens/CreateScreen';
 
 const navigator = createStackNavigator(
   {
     Index: IndexScreen,
-    Show: ShowScreen
+    Show: ShowScreen,
+    Create: CreateScreen
   },
   {
     initialRouteName: 'Index',
